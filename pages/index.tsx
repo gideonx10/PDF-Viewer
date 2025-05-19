@@ -8,7 +8,7 @@ export default function Home() {
         const pdfjsLib = await import("pdfjs-dist");
         pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.js`;
 
-        const url = "/sample.pdf";
+        const url = "/amar_vaghela_final_report.pdf";
         const loadingTask = pdfjsLib.getDocument(url);
         const pdf = await loadingTask.promise;
 
@@ -89,7 +89,7 @@ export default function Home() {
           color: "#333",
           textAlign: "center"
         }}>
-          PDF Viewer
+          Thesis-PDF by Rahul Panchal
         </h1>
         <div 
           id="pdf-container"
